@@ -61,22 +61,31 @@ Result:
 
     Running migration: 1_initial_migration.js
       Replacing Migrations...
-      ... 0x2b43e763ccae5e64e379abe4a6dea491580004373c22fec0b41d9d79074afe01
-      Migrations: 0xf7405e888ecab388fbbae57a5cc63cad0a7b4dfc
+      ... 0xa773acd5123b1e843d7887b6907dcb833fb36c58a86f15611629de309adb0587
+      Migrations: 0x073a97a4060cd4be50c421336a005fa870622ba6
     Saving successful migration to network...
-      ... 0xc1f0d4ea1a58f80fa48960e31026f7b97de71e8c03b74f17f913d7f897173323
+      ... 0x180ab7e529d2c03555426722c5c6b25b45df99718e97324a01d958eae4b661bd
     Saving artifacts...
     Running migration: 2_deploy_contracts.js
       Replacing TestRegistry...
-      ... 0x22e8e321232189aa0f76c43cf107bc240c141bab500b14bec4d191a9e2ba036a
-      TestRegistry: 0x63d9887ad12ae1b86740fcb5488fdac0ff87deec
+      ... 0xfbe700091b5acebe72341fc59f5857fb8025025c4c1ecfc2b4735ff886d3a158
+      TestRegistry: 0xeb99f3fdd30b0139da726ad479c4047c76865392
       Replacing SimpleMultiSig...
-      ... 0x5c844f80f713b0d8523157044fbb64add09430e5a7dc95ad26be827cf281c69a
-      SimpleMultiSig: 0x73d6abea446e239410bdadede665f8b2c636b847
+      ... 0xd93b814878326ace46379bd5ff0a9636075f582875e14e1fa31f671d3c857d1f
+      SimpleMultiSig: 0xd0770917e72e9c44a8201de9aa952175b57ad7b2
     Saving successful migration to network...
-      ... 0x402fafb37455bea34ceeebc4bd4f68c2d31519b65c5d8d74753746d6daf6fe04
+      ... 0x25dd737c0e3ae2077bf469eb89418b8351afaa691ef075350ac233e16f206ffa
     Saving artifacts...
 
+The contract addresses:
 
-    SimpleMultiSig: 0x73d6abea446e239410bdadede665f8b2c636b847
-      TestRegistry: 0x63d9887ad12ae1b86740fcb5488fdac0ff87deec
+    SimpleMultiSig: 0xd0770917e72e9c44a8201de9aa952175b57ad7b2
+      TestRegistry: 0xeb99f3fdd30b0139da726ad479c4047c76865392
+
+Signing:
+
+    # Follow directions at https://github.com/ethereum/web3.py
+
+    export WEB3_PROVIDER_URI=http://localhost:7545
+    ./twosig.py
+    
