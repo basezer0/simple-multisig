@@ -1,3 +1,6 @@
-node_modules
-build
 *.orig
+/.env
+/README-base0.md
+/package-lock.json
+build
+node_modules
